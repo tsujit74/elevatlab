@@ -67,5 +67,8 @@ It is designed to be **mobile-friendly** using Flexbox and media queries.
 
 ## 📤 Submission
 
-* GitHub Repo Link: \[Your Repo Link Here]
-* Submission Form: [Click Here](https://forms.gle/8Gm83s53KbyXs3Ne9)
+* GitHub Repo Link: \[https://github.com/tsujit74/elevatlab.git]
+
+---
+## Author 
+ # Sujit Thakur
