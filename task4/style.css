@@ -1,0 +1,95 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --primary: #2563eb;
+  --secondary: #1e293b;
+  --light: #f9fafb;
+  --gap: 1rem;
+}
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: var(--light);
+  color: var(--secondary);
+  line-height: 1.6;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--gap);
+  background: var(--primary);
+  color: white;
+}
+.logo { font-weight: bold; font-size: 1.5rem; }
+.nav {
+  display: flex;
+  gap: var(--gap);
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav a:hover { color: #dbeafe; }
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem var(--gap);
+  gap: 2rem;
+}
+.hero-text { flex: 1; }
+.hero-text h1 { font-size: 2.2rem; margin-bottom: 1rem; }
+.hero-text p { margin-bottom: 1rem; }
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn-primary:hover { background: #1d4ed8; }
+.hero-img img { max-width: 100%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+  padding: 2rem var(--gap);
+}
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-5px); }
+.card h3 { margin-bottom: 0.5rem; }
+
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--secondary);
+  color: white;
+  margin-top: 2rem;
+}
+
+
+@media (max-width: 1024px) {
+  .hero { flex-direction: column; text-align: center; }
+  .features { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .site-header { flex-direction: column; }
+  .nav { flex-direction: column; align-items: center; margin-top: 1rem; }
+  .features { grid-template-columns: 1fr; }
+  .hero-text h1 { font-size: 1.8rem; }
+}
