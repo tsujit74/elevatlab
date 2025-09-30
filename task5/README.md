@@ -57,7 +57,7 @@ task5/
 
 * A **static portfolio website** was successfully deployed.
 * Live Link (replace with your actual link):
-  👉 [https://tsujit74.github.io/Photography/](https://username.github.io/)
+  👉 [https://tsujit74.github.io/Photography/](https://tsujit74.github.io/Photography/)
 
 This demonstrated skills in **Git, GitHub, hosting, and deployment workflow**.
 
